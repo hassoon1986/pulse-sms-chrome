@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    background: #EEEEEE;
+    padding: 0;
+    margin: 0;
+}
+
+webview {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: inline-flex !important;
+}
+
+#options {
+    background: url(assets/settings.svg) no-repeat;
+}
+
+#popup {
+    background: url(assets/launch.svg) no-repeat;
+}
+
+.icon {
+    float: right;
+    margin-right: 20px;
+    color: #FFFFFF;
+    width: 18px;
+    height:18px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

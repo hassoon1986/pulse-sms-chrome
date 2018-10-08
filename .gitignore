@@ -1,0 +1,6 @@
+**/.DS_Store
+**/*.sh
+**/*.p12
+**/*.lock
+**/*-lock.json
+**/*.log

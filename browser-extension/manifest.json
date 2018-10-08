@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+
+    "name": "Pulse Extension",
+    "description": "Text message your friends from your computer",
+    "version": "2.0.0",
+    "browser_action": {
+        "default_icon": "assets/icon_48.png",
+        "default_popup": "popup.html",
+        "default_title": "Pulse"
+    },
+    "minimum_chrome_version": "38",
+    "permissions": [
+        "https://klinkerapps.com/",
+        "https://*.klinkerapps.com/",
+        "https://pulsesms.app/",
+        "storage",
+        "activeTab",
+        "tabs",
+        "gcm",
+        "notifications",
+        "background"
+    ],
+    "icons": {
+        "16": "assets/icon_16.png",
+        "48": "assets/icon_48.png",
+        "96": "assets/icon_96.png",
+        "128": "assets/icon_128.png",
+        "256": "assets/icon_256.png"
+    },
+    "background": {
+        "scripts": [
+            "sjcl.js",
+            "hmacsha1.js",
+            "messenger.js"
+        ]
+    },
+    "externally_connectable": {
+        "matches": ["https://pulsesms.app/*"]
+    },
+    "author": "Jake Klinker",
+    "options_ui": {
+      "page": "options.html",
+      "chrome_style": true
+    }
+}

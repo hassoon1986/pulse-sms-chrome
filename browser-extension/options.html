@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pulse Options</title>
+  <style>
+    body: { padding: 10px; }
+    div { padding: 10px; }
+    #reregister:hover { cursor: pointer; }
+  </style>
+</head>
+
+<body>
+  <div id="reregister">Re-register for notifications</div>
+
+  <div>
+    <label>
+      <input type="checkbox" id="notifications">
+      Show notifications
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" id="notification_content">
+      Show notification content
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" id="persist_notifications">
+      Keep notifications until manually dismissed
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" id="options_bar">
+      Display options bar
+    </label>
+  </div>
+
+  <div id="status"></div>
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
